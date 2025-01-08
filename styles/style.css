@@ -1,0 +1,239 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* variables */
+:root{
+    --primary-color: #ff4d05;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #2c2c2c;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    padding: 20px 20px 30px 20px;
+    width: 100%;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    
+}
+
+nav .logo-name h2{
+    color: var(--primary-color);
+   
+}
+nav .logo-name span{
+    color: white;
+   
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .menu{
+    display: flex;
+}
+
+.navbar ul{
+    list-style: none;
+   
+}
+.navbar li{
+    margin-right: 30px;
+    
+}
+.navbar a{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color ease  0.4s;
+
+}
+.navbar a:hover{
+    color: var(--primary-color);
+}
+
+
+/* about section */
+.about-section{
+    margin: 120px auto 60px auto;
+    padding: 20px ;
+    background-color: #000000;
+    border-radius: 20px;
+    max-width: 1088px;
+}
+.container-1 h1{
+    color: var(--primary-color);
+
+}
+.container-1 h1 span{
+    color: white;
+}
+.about-section .container-1 .flex-wrapper{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-section .info-wrapper{
+    max-width: 700px;
+    color: white;
+    line-height: 30px;
+}
+.about-section .img-wrapper img{
+
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+/* skills */
+.skill-section{
+    margin: 20px auto;
+    padding: 20px ;
+    background-color: #000000;
+    border-radius: 20px;
+    max-width: 1088px;
+}
+.flex-wrapper .list-skills{
+    padding: 20px 0px;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.flex-wrapper .list-skills li{
+    background-color: #ff4d05;
+    padding: 10px;
+    border-radius: 20px;
+}
+/* project */
+.project-section{
+    margin: 60px auto;
+    padding: 20px ;
+    background-color: #000000;
+    border-radius: 20px;
+    max-width: 1088px;
+}
+.project-section .flex-wrapper{
+    padding: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.project-section .project-1{
+    padding: 20px;
+    border: 1px solid #ff4d05;
+    border-radius: 20px;
+    color: white;
+}
+.project-section .flex-wrapper  p{
+    padding-bottom: 20px;
+}
+.project-section .project-2{
+    padding: 20px;
+    border: 1px solid #ff4d05;
+    border-radius: 20px;
+    max-width: 500px;
+    color: white;
+   
+}
+.flex-wrapper .pjct-btn{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ff4d05;
+    color: white;
+}
+.flex-wrapper .pjct-btn:hover{
+    background-color: #000000;
+    border: 2px solid #ff4d05;
+
+}
+/* contact secction */
+.contact-section{
+    margin: 60px auto;
+    padding: 20px ;
+    background-color: #000000;
+    border-radius: 20px;
+    max-width: 1088px;
+    color: white;
+}
+.contact-section .container h2{
+    color: var(--primary-color);
+    padding-bottom: 20px;
+}
+.contact-section .container span{
+    color: white;
+}
+.contact-form .flex-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.user-info-wrapper{
+    padding-top: 30px;
+}
+label{
+    padding: 20px 0;
+}
+.contact-form .flex-form button{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ff4d05;
+    color: white;
+
+}
+/* footer */
+.footer-section{
+    background-color: #000000;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* design for mobile devices */
+
+@media(max-width:767px){
+
+    .about-section{
+        margin: 120px auto 60px auto;
+        padding: 20px ;
+        background-color: #000000;
+        border-radius: 20px;
+        max-width: 600px;
+        
+    }
+  
+    .about-section .container-1 .flex-wrapper{
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .about-section .info-wrapper{
+        max-width: 700px;
+        padding-left: 20px;
+        order: 2;
+        flex: 1rem;
+        color: white;
+        line-height: 25px;
+    }
+    
+ 
+}
